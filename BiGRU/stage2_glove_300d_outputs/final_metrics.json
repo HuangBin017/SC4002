@@ -1,0 +1,27 @@
+{
+  "best_epoch": 40,
+  "best_validation_score": 82.67352739109398,
+  "epochs_run": 40,
+  "glove": {
+    "glove_file": "/Users/adityamd/Desktop/NTU/Year_4/Sem_1/NLP/glove.6B.300d.txt",
+    "embedding_dimension": 300,
+    "matched_tokens": 4963,
+    "vocabulary_tokens_excluding_special": 5144,
+    "coverage_percent": 96.48,
+    "embedding_fine_tuned": true
+  },
+  "metrics": {
+    "dev": {
+      "loss": 1.2974076265779788,
+      "intent_accuracy": 86.7683226758485,
+      "slot_micro_f1": 78.57873210633947
+    },
+    "test": {
+      "loss": 1.3347682265042458,
+      "intent_accuracy": 86.44922663080027,
+      "slot_micro_f1": 75.08367422833767
+    }
+  },
+  "checkpoint": "stage2_glove_300d_outputs/best_bigru_attention_crf_glove_300d.pt",
+  "note": "Joint loss is on a different scale from the baseline because CRF uses token_mean."
+}

@@ -5,4 +5,5 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Downloaded embeddings; keep locally rather than in Git history.
-glove.6B.100d.txt
+glove*.txt
+glove*.zip
