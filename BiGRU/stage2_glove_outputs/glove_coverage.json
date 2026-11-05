@@ -1,0 +1,8 @@
+{
+  "glove_file": "/Users/adityamd/Desktop/NTU/Year_4/Sem_1/NLP/glove.6B.100d.txt",
+  "embedding_dimension": 100,
+  "matched_tokens": 4963,
+  "vocabulary_tokens_excluding_special": 5144,
+  "coverage_percent": 96.48,
+  "embedding_fine_tuned": true
+}

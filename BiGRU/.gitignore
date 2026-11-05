@@ -1,0 +1,8 @@
+Slides/
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Downloaded embeddings; keep locally rather than in Git history.
+glove.6B.100d.txt
