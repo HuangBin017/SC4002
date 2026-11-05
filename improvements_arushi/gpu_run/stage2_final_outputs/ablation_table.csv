@@ -1,0 +1,15 @@
+Model version,Split,Total # parameters,Total # trainable parameters,Intent accuracy (%),Slot micro-F1 (%),Number of epochs
+Stage-1 baseline,Validation,"1,044,435","1,044,435",84.01,78.98,30
+Stage-1 baseline,Test,"1,044,435","1,044,435",82.82,75.63,30
+"+ Stage-2 changes, no GloVe (single model)",Validation,"4,931,523","4,931,523",85.24,80.21,35
+"+ Stage-2 changes, no GloVe (single model)",Test,"4,931,523","4,931,523",84.63,78.37,35
+"+ GloVe, single member 1",Validation,"10,597,503","3,053,703",87.21,81.59,29
+"+ GloVe, single member 1",Test,"10,597,503","3,053,703",86.25,78.55,29
+"+ GloVe, single member 2",Validation,"10,597,503","3,053,703",86.77,81.07,36
+"+ GloVe, single member 2",Test,"10,597,503","3,053,703",86.01,79.19,36
+"+ GloVe, single member 3",Validation,"10,597,503","3,053,703",86.52,82.00,29
+"+ GloVe, single member 3",Test,"10,597,503","3,053,703",85.47,79.33,29
+"+ GloVe, single member 4",Validation,"10,597,503","3,053,703",87.01,80.85,30
+"+ GloVe, single member 4",Test,"10,597,503","3,053,703",85.81,78.76,30
++ 4-member ensemble (final),Validation,"19,758,612","12,214,812",87.26,83.34,-
++ 4-member ensemble (final),Test,"19,758,612","12,214,812",87.49,81.38,-

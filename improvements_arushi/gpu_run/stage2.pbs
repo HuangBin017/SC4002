@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N sc4002_g1
+#PBS -P personal-c230202
+#PBS -q normal
+#PBS -l select=1:ncpus=16:ngpus=1:mem=64gb
+#PBS -l walltime=03:00:00
+#PBS -j oe
+#PBS -o /home/users/ntu/c230202/scratch/SC4002_BiGRU_g1/job.log
+
+cd /home/users/ntu/c230202/scratch/SC4002_BiGRU_g1
+ENV=/home/users/ntu/c230202/scratch/sc4001_env
+export PYTHONPATH=$PWD/pylib
+export PATH=$ENV/bin:$PATH
+hostname; date; nvidia-smi --query-gpu=name,memory.total --format=csv
+python -c "import torch, torchcrf; print('torch', torch.__version__, 'cuda', torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=-1 model_stage2.ipynb
+echo "nbconvert exit $?"; date

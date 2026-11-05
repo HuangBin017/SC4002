@@ -1,0 +1,1 @@
+../BiGRU/joint_bigru_attention_crf.py

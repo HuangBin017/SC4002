@@ -1,0 +1,5 @@
+Model version,Split,Total # parameters,Total # trainable parameters,Intent accuracy (%),Slot micro-F1 (%),Number of epochs
+Stage-1 system,Validation,"1,044,435","1,044,435",84.01,78.98,30
+Stage-1 system,Test,"1,044,435","1,044,435",82.82,75.63,30
+Stage-2 system,Validation,"19,758,612","12,214,812",87.75,83.54,4 members × best of 40 (29/34/37/31)
+Stage-2 system,Test,"19,758,612","12,214,812",87.73,81.55,4 members × best of 40 (29/34/37/31)
